@@ -1,0 +1,18 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: prod
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: go-repo1
+          artifact-id: 1f21adc5-be93-4d54-b6f7-3e672eaf88dd 
+          target-environment: Pre-Prod
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: gorepo2
+          artifact-id: 6e97600f-283f-49ac-bc02-635cb9a90946
+          target-environment: Pre-Prod
