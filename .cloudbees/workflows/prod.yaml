@@ -9,7 +9,7 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: go-repo1
-          artifact-id: b4b7c5cd-6f21-4caf-b654-92e97afd746d 
+          artifact-id: 49539636-639b-4b64-8592-11c772857e8c 
           target-environment: Pre-Prod
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
