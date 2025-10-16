@@ -14,5 +14,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: gorepo2
-          artifact-id: 7d02ffc6-f5cd-41bc-ba46-73149fe77e9b
+          artifact-id: 149afec8-eb07-4103-ae39-8182cbd06ef8
           target-environment: Pre-Prod
